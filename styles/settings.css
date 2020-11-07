@@ -1,0 +1,77 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #1e2541;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 118px;
+    background-color: #5e608d;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+
+/* Сайдбар ссылки */
+.sidebar a {
+    display: block;
+    color:white;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+/* Активная/текущая ссылка */
+.sidebar a.active {
+    background-color: #9200aa;
+    color: white;
+}
+  
+/* Ссылки при наведении мыши */
+.sidebar a:hover:not(.active) {
+    background-color: #6f2bf2;
+    color: white;
+}
+
+.profile img {
+    margin: 5px 0px 0px 20px;
+}
+
+.profile h3 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content {
+    margin-left: 170px;
+    padding: 5px 16px;
+    height: 1000px;
+    color: white;
+    text-align: center;
+}
+
+.panel-settings {
+    width: 300px;
+    margin-top: 50px;
+    height: 300px;
+}
+
+.panel-settings a {
+    text-decoration: none;
+    color: white;
+    background-color: #3d4056;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+}
+
+/* Ссылки при наведении мыши */
+.panel-settings a:hover:not(.active) {
+    background-color: #393560;
+    color: white;
+}
