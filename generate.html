@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Manager</title>
+    <link rel="stylesheet" href="styles/generate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/generate.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="img/user-img.png" alt="" width="80" height="80">
+            <h3>username</h3>
+        </div>
+
+        <a class="active" href="generate.html">Generate</a>
+        <a class="" href="#description">Description</a>
+        <a class="" href="#history">History</a>
+        <a class="" href="settings.html">Settings</a>
+    </div>
+
+    <div class="content">
+        <div class="customize-password">
+            <div class="select-lenght">
+                <h3>Password lenght</h3>
+                <input class="slider-value" type="text" value="32">
+                <input type="range" min="1" max="32" value="32" class="slider" id="myRange">
+            </div>
+            <div class="settings-radio">
+                <div class="list-radio">
+                    <input class="radio-input" name="encryption-style" type="radio" id="easy-to-say">
+                    <label for="easy-to-say">Easy to say</label>
+                </div>
+                <div class="list-radio">
+                    <input class="radio-input" name="encryption-style" type="radio" id="easy-to-read">
+                    <label for="easy-to-read">Easy to read</label>
+                </div>
+                <div class="list-radio">
+                    <input class="radio-input" name="encryption-style" type="radio" id="all-characters">
+                    <label for="all-characters">All characters</label>
+                </div>
+            </div>
+            <div class="settings-checkbox">
+                <div class="list-checkbox">
+                    <input class="checkbox-input" type="checkbox" id="uppercase" checked="checked">
+                    <label for="uppercase">Uppercase</label>
+                </div>
+                <div class="list-checkbox">
+                    <input class="checkbox-input" type="checkbox" id="lowercase" checked="checked">
+                    <label for="lowercas">Lowercase</label>
+                </div>
+                <div class="list-checkbox">
+                    <input class="checkbox-input" type="checkbox" id="numbers" checked="checked">
+                    <label for="numbers">Numbers</label>
+                </div>
+                <div class="list-checkbox">
+                    <input class="checkbox-input" type="checkbox" id="symbols" checked="checked">
+                    <label for="Symbols">Symbols</label>
+                </div>
+            </div>
+        </div>
+        <h3 class="password"></h3>
+    </div>
+</body>
+</html>
